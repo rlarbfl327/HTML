@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flaot1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Rodoto', sans-serif;
+            font-style: normal;
+        }
+        .block{
+            width: 960px;
+            margin: 0 auto;
+        }
+        h4{
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+        section{
+            text-align: left;
+        }
+        article{
+            display: inline-block;
+        }
+        .text1{
+            font-size: 18px;
+            width: 60%;
+            padding: 25px;
+            line-height: 110%;
+            float: left;
+        }
+        .text2{
+            font-size: 18px;
+            width: 60%;
+            padding: 25px;
+            line-height: 110%;
+            float: right;
+        }
+        img{
+            width: 40%;
+        }
+        .pic1{
+            float: right;
+        }
+        .pic2{
+            float: left;
+        }
+        .box1::after{
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block">
+        <h4>What We Do?</h4>
+        <section>
+            <article class="box1">
+                <img class="pic1" src="https://images.unsplash.com/photo-1522426266214-ec2d2abb9ce0?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="야경 사진">
+                <p class="text1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptates esse reprehenderit dolor, 
+                    laboriosam omnis hic nesciunt, laborum quos earum ipsum sunt. Sequi perferendis hic explicabo amet, qui, 
+                    perspiciatis cumque totam placeat, impedit modi nobis. Nobis nisi autem culpa inventore vitae iusto cupiditate quae, 
+                    quidem, cum ad mollitia magnam error dicta doloribus. Culpa tempore eligendi sunt, reprehenderit quidem modi? 
+                    Delectus architecto maiores saepe consectetur quos.</p>
+            </article>
+            <article class="box2">
+                <img class="pic2" src="https://images.unsplash.com/photo-1490133961212-53d0e60a1f73?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="아이슬란드 사진">
+                <p class="text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, 
+                    iste magni expedita cupiditate facilis beatae temporibus veniam nulla recusandae corrupti ratione quis aliquid 
+                    tenetur omnis quasi sit possimus quae vero ea voluptate tempora? Sint accusantium molestias reiciendis repudiandae 
+                    nam quaerat nesciunt soluta illo, magni quae unde beatae, cupiditate aut eius iste adipisci maiores est vitae distinctio, 
+                    corporis facilis. Molestias excepturi non quos labore quis maiores.</p>
+            </article>
+        </section>
+    </div>
+    <br>
+    <hr>
+</body>
+</html>
